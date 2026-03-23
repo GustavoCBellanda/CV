@@ -47,19 +47,28 @@
       </div>
       <h1 class="gate__brand">Gustavo Bellanda</h1>
     </div>
-    <nav class="gate__footer-lang" aria-label="Language">
-      <a class="gate__opt" href="en.html" data-lang="en">English</a>
-      <span class="gate__sep" aria-hidden="true">·</span>
-      <a class="gate__opt" href="pt-br.html" data-lang="pt">Português</a>
-    </nav>
     <script>
       (function () {
         var k = "lang";
-        document.querySelectorAll(".gate__opt").forEach(function (a) {
-          a.addEventListener("click", function () {
-            localStorage.setItem(k, a.getAttribute("data-lang") || "");
+        var legacy = "portfolio-lang";
+        if (localStorage.getItem(k) || localStorage.getItem(legacy)) return;
+        fetch("https://get.geojs.io/v1/ip/country.json", {
+          credentials: "omit",
+        })
+          .then(function (r) {
+            if (!r.ok) throw new Error("geo");
+            return r.json();
+          })
+          .then(function (d) {
+            var code = String(d.country || "").toUpperCase();
+            var isBr = code === "BR";
+            localStorage.setItem(k, isBr ? "pt" : "en");
+            window.location.replace(isBr ? "pt-br.html" : "en.html");
+          })
+          .catch(function () {
+            localStorage.setItem(k, "en");
+            window.location.replace("en.html");
           });
-        });
       })();
     </script>
   </body>
