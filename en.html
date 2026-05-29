@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Gustavo Bellanda — Software architect and engineer. Data platforms, corporate AI, FastAPI, PostgreSQL, Polars — production stack."
-    />
-    <meta
-      name="google-site-verification"
-      content="--MIq7v2a5l50gZglwLTJgm347RbYKkbnf_XrnyCou0"
+      content="Gustavo Bellanda — Software architect. Data platforms, enterprise AI and SaaS products in production. Python, FastAPI, Rust, React, Polars."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -18,7 +14,7 @@
     />
     <meta
       property="og:description"
-      content="Production engineer turned full-stack engineer — data, AI platforms, and systems that ship."
+      content="I turn a company's real operation into data, AI and product platforms that ship to production."
     />
     <meta property="og:url" content="https://bellanda.github.io/dev/en.html" />
     <meta
@@ -55,12 +51,12 @@
               <a class="site-nav__link" href="#about" data-scroll>About</a>
             </li>
             <li>
-              <a class="site-nav__link" href="#stack" data-scroll>Stack</a>
+              <a class="site-nav__link" href="#work" data-scroll
+                >What I build</a
+              >
             </li>
             <li>
-              <a class="site-nav__link" href="#projects" data-scroll
-                >Projects</a
-              >
+              <a class="site-nav__link" href="#stack" data-scroll>Stack</a>
             </li>
             <li>
               <a class="site-nav__link" href="#education" data-scroll
@@ -103,14 +99,12 @@
       <nav aria-label="Mobile">
         <ul>
           <li><a class="site-nav__link" href="#about" data-scroll>About</a></li>
+          <li>
+            <a class="site-nav__link" href="#work" data-scroll>What I build</a>
+          </li>
           <li><a class="site-nav__link" href="#stack" data-scroll>Stack</a></li>
           <li>
-            <a class="site-nav__link" href="#projects" data-scroll>Projects</a>
-          </li>
-          <li>
-            <a class="site-nav__link" href="#education" data-scroll
-              >Education</a
-            >
+            <a class="site-nav__link" href="#education" data-scroll>Education</a>
           </li>
           <li>
             <a class="site-nav__link" href="#contact" data-scroll>Contact</a>
@@ -123,14 +117,15 @@
       <img
         class="hero__profile"
         src="assets/img/profile.jpg"
-        width="168"
-        height="168"
         alt="Gustavo Bellanda"
       />
       <div class="hero__inner">
         <h1 class="hero__name">Gustavo Bellanda</h1>
-        <p class="hero__tagline">
-          Software Architect · AI Engineer · Data Scientist
+        <p class="hero__tagline">Software Architect · Data, AI &amp; Product</p>
+        <p class="hero__lead">
+          I turn a company's real operation — scattered data, manual processes,
+          decisions in the dark — into data, AI and product platforms that ship
+          to production.
         </p>
         <div class="hero__social" aria-label="Social links">
           <a
@@ -157,17 +152,7 @@
               />
             </svg>
           </a>
-          <a href="mailto:bellanda.dev@outlook.com" aria-label="Email Outlook">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-              />
-            </svg>
-          </a>
-          <a
-            href="mailto:gustavocasadeibellanda@gmail.com"
-            aria-label="Email Gmail"
-          >
+          <a href="mailto:bellanda.dev@outlook.com" aria-label="Email">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
@@ -187,93 +172,348 @@
         <header class="section__head">
           <p class="section__label">01 — About</p>
           <h2 class="section__title">About</h2>
+          <p class="section__intro">
+            In four years I went from automating spreadsheets to architecting
+            data and AI platforms for large operations — and building a company
+            around it.
+          </p>
         </header>
+        <div class="arc" aria-label="Trajectory">
+          <div class="arc__step">
+            <span class="arc__year">2022</span>
+            <span class="arc__label"
+              >Intern automating processes at an automotive group</span
+            >
+          </div>
+          <div class="arc__step">
+            <span class="arc__year">2023 — 2024</span>
+            <span class="arc__label"
+              >Computer vision in production on the factory floor</span
+            >
+          </div>
+          <div class="arc__step arc__step--now">
+            <span class="arc__year">2025 — now</span>
+            <span class="arc__label"
+              >Data platforms, enterprise AI and SaaS products, with my own
+              company</span
+            >
+          </div>
+        </div>
         <div class="about-grid">
           <div class="about__main">
             <p>
-              Production Engineer by training, Software Engineer by craft. My
-              work sits at the intersection of process engineering and modern
-              software — quality rigor, obsession with clean architectures, and
-              a focus on how things actually behave under real load.
+              Production engineer by degree, software engineer by calling. Since
+              2022 I've been building software that ships to production: I
+              started automating processes at an automotive group, spent two
+              years putting computer vision on the factory floor, and today I
+              design data platforms, enterprise AI and SaaS products.
             </p>
             <p>
-              Since late 2024 I&apos;ve been deep in software architecture and
-              data engineering: I built a corporate AI platform (LibreChat fork)
-              serving 3,000+ employees at a major automaker, with custom agents,
-              MCP, and LangChain. In parallel, I lead the technical architecture
-              of three startups — real estate intelligence, sports event
-              management, and vehicle sales — while designing RevOps data
-              pipelines with Polars, DuckDB, and ML. I&apos;m an enthusiast and
-              heavy user of AI as an engineering tool: Cursor and Claude Code
-              with agents, rules, skills, and sub-agents are part of my daily
-              workflow. Perfectionist about architectures and passionate about
-              benchmarks and high performance.
+              Through <strong>Bellanda Intelligence</strong>, my company, I
+              architect and deliver end-to-end data platforms for corporate
+              clients — from a lakehouse unifying more than two decades of
+              history for a Mitsubishi and Suzuki dealership group, to RevOps
+              systems that connect marketing, sales, after-sales and finance
+              into a single decision logic. In parallel, I lead the technical
+              architecture of SaaS products with partners — including an
+              AI-first operating system for used-vehicle dealers.
             </p>
             <p>
-              My stack is an ecosystem, not a limitation: Python with FastAPI
-              and Granian for high-performance APIs, TypeScript with React and
-              Tailwind for interfaces, but also Bun for pure TS when it makes
-              sense. Rust for systems and backend (Axum), Go and Zig on the
-              radar. PostgreSQL for all things data, Polars and DuckDB for
-              analysis and ETL. Whatever modern technology solves the problem
-              with robustness.
+              I work with a heavily AI-assisted engineering flow: agents with
+              rules and skills versioned per project, planning with a strong
+              model and executing with a fast one, and architecture invariants
+              the model itself respects. To me, AI doesn't replace judgment — it
+              amplifies whoever has the criteria to know what to ask and how to
+              evaluate the result.
             </p>
             <p>
-              Before that, from 2023 to 2024, I shipped computer vision
-              pipelines in automotive manufacturing: 360° multi-camera
-              inspection stations, sealant verification across 108 points,
-              AI-powered people counting, drone-based yard mapping, and
-              video-based value-added analysis — all integrated with the factory
-              floor and operator-facing interfaces used daily.
+              My stack is an ecosystem, not a religion: Python (FastAPI,
+              Granian, asyncpg) and TypeScript (React, TanStack) day to day,
+              Rust for the paths where performance truly matters, PostgreSQL,
+              Polars and DuckDB for data. I use whatever tool solves the problem
+              robustly.
             </p>
             <p>
-              My career started in 2022 as a purchasing intern at an automotive
-              group, where I discovered the power of automating real processes:
-              purchase orders, NCM lookups, financial data scraping, document
-              generation — my first practical implementations with Python and
-              Selenium, where I got to know the corporate world and understood
-              that software solves business problems.
-            </p>
-            <p>
-              Day to day I work with Cursor and Claude Code: agents, rules,
-              skills, and sub-agents; plan mode with a capable model and fast
-              execution. Rust is an ongoing study — systems, the borrow checker,
-              and kernel-level thinking. Go and Zig on the study horizon — high
-              safety, performance, and scalability ecosystems.
+              I'm 26 and I treat fundamentals as a long-term advantage —
+              systems, low-level and Rust are continuous study, not a fad. A
+              perfectionist about architecture, in love with benchmarks and high
+              performance.
             </p>
           </div>
           <aside class="about__aside" aria-label="Quick facts">
             <dl class="facts">
               <dt>Location</dt>
               <dd>Catalão, GO — Brazil</dd>
+              <dt>Company</dt>
+              <dd>Bellanda Intelligence</dd>
               <dt>Focus</dt>
-              <dd>Architecture · AI · Data</dd>
+              <dd>Data · AI · Architecture</dd>
               <dt>Backend</dt>
-              <dd>Python · FastAPI · Granian</dd>
-              <dt>Systems</dt>
-              <dd>Rust (learning deeply)</dd>
+              <dd>Python · FastAPI · Rust</dd>
               <dt>Frontend</dt>
-              <dd>TypeScript · React · Tailwind</dd>
+              <dd>React · TanStack · Tailwind</dd>
               <dt>Data</dt>
               <dd>PostgreSQL · Polars · DuckDB</dd>
-              <dt>AI tools</dt>
-              <dd>Cursor · Claude Code · agents · rules/skills</dd>
+              <dt>Method</dt>
+              <dd>AI-assisted engineering</dd>
               <dt>Mode</dt>
-              <dd>Independent · multiple projects</dd>
+              <dd>Independent · products &amp; consulting</dd>
             </dl>
           </aside>
         </div>
       </section>
 
+      <section class="section" id="work" data-reveal>
+        <header class="section__head">
+          <p class="section__label">02 — What I build</p>
+          <h2 class="section__title">What I build</h2>
+          <p class="section__intro">
+            Organized by capability, not by timeline — what matters is breadth
+            and depth, not the order it happened.
+          </p>
+        </header>
+
+        <div class="work-group">
+          <h3 class="work-group__label">Data &amp; enterprise AI platforms</h3>
+          <div class="work-grid">
+            <article class="work-card">
+              <h4 class="work-card__title">
+                A corporate lakehouse, from zero to the boardroom
+              </h4>
+              <p>
+                I turned more than two decades of scattered data from a
+                Mitsubishi and Suzuki dealership group into a single source of
+                truth. Leadership now sees the whole operation — marketing,
+                sales, after-sales and finance — in near real time, sees the
+                margin on every sale, and anticipates demand instead of
+                reacting. The close that used to depend on a monthly committee
+                now updates itself.
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">Polars</span>
+                <span class="tag">DuckDB</span>
+                <span class="tag">Delta Lake</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">ML</span>
+              </div>
+            </article>
+            <article class="work-card">
+              <h4 class="work-card__title">RevOps intelligence</h4>
+              <p>
+                One decision logic connecting marketing, sales, after-sales and
+                finance: what it really costs to win a customer, where margin is
+                leaking, which stock will turn and what to sell next — answers
+                nobody had together before. Operational decisions, not a static
+                report.
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Polars</span>
+                <span class="tag">ML</span>
+                <span class="tag">Dashboards</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="work-group">
+          <h3 class="work-group__label">Multi-tenant SaaS products</h3>
+          <div class="work-grid">
+            <article class="work-card">
+              <h4 class="work-card__title">
+                Kailos — an AI-first operating system for dealers
+              </h4>
+              <p>
+                An operating system for used-vehicle dealers: it takes the store
+                out of scattered WhatsApp threads and spreadsheets and puts the
+                whole operation — sourcing, appraisal, pricing, AI-assisted
+                service and sales — in one place that works alongside the
+                salesperson. ERP + CRM + AI + marketplace in a modular
+                architecture. Technical lead, with partners.
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">FastAPI</span>
+                <span class="tag">React 19</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">NATS</span>
+                <span class="tag">LangChain</span>
+              </div>
+            </article>
+            <article class="work-card">
+              <h4 class="work-card__title">Sports events platform</h4>
+              <p>
+                Everything a sports event needs in a single platform: real
+                registration rules, pricing tiers, coupons, teams and results —
+                so the organizer stops improvising and the athlete gets an
+                experience worthy of the race.
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">FastAPI</span>
+                <span class="tag">React</span>
+                <span class="tag">TanStack</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="work-group">
+          <h3 class="work-group__label">Applied AI engineering</h3>
+          <div class="work-grid">
+            <article class="work-card">
+              <h4 class="work-card__title">
+                Enterprise AI for 1,000+ employees
+              </h4>
+              <p>
+                I helped bring generative AI into the daily work of more than
+                1,000 employees at a large automaker: tailored assistants, with
+                governance and security, that automate real tasks. Not a generic
+                chatbot — an AI layer integrated into the operation.
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">LangChain</span>
+                <span class="tag">MCP</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">React</span>
+              </div>
+            </article>
+            <article class="work-card">
+              <h4 class="work-card__title">
+                An AI-assisted engineering harness
+              </h4>
+              <p>
+                My way of working became a system: I turn intent into software
+                with agents that follow the architecture rules I define —
+                planning with a strong model, executing with a fast one. It's
+                what lets me deliver, alone or with a small team, what would
+                normally take a whole crew.
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">Agents</span>
+                <span class="tag">Rules / Skills</span>
+                <span class="tag">MCP</span>
+                <span class="tag">Plan / Execute</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="work-group">
+          <h3 class="work-group__label">
+            Computer vision in production
+            <span class="work-group__meta">2023 — 2024</span>
+          </h3>
+          <div class="work-grid">
+            <article class="work-card">
+              <h4 class="work-card__title">360° AI inspection station</h4>
+              <p>
+                I put AI to watch the production line: four high-resolution
+                cameras checking every vehicle by VIN and catching deviations
+                the human eye misses — real-time quality control, right on the
+                line's monitor.
+              </p>
+              <div class="work-card__embed">
+                <iframe
+                  src="https://1drv.ms/v/c/bb50e87a7091feac/IQThpPnnZsDjTIJ-WUtO3ogJAXRpI93G8fbWB5qiiC128IY"
+                  title="Video demo — 360° inspection station"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="work-card__thumb">
+                <img
+                  src="assets/img/pratical_projects/first_ia_station/station.png"
+                  alt="360° inspection station"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="work-card__tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">YOLO</span>
+              </div>
+            </article>
+            <article class="work-card">
+              <h4 class="work-card__title">
+                More computer vision on the factory floor
+              </h4>
+              <p>
+                More AI watching the operation: 108-point sealant verification,
+                AI people-counting instead of turnstiles, drone yard mapping,
+                and value-added analysis from video — each one cutting rework or
+                cost on the floor.
+              </p>
+              <div class="work-card__embed">
+                <iframe
+                  src="https://1drv.ms/v/c/bb50e87a7091feac/IQTOUZLORNEVTYXGeBavKg3tAZZqE91V3Pa5r5zLZpR0ORg"
+                  title="Video demo — people counting"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="work-card__thumb">
+                <img
+                  src="assets/img/pratical_projects/sealant_station/bancada_sealant.png"
+                  alt="Sealant verification bench"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="work-card__tags">
+                <span class="tag">OpenCV</span>
+                <span class="tag">YOLO</span>
+                <span class="tag">Computer vision</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="work-group">
+          <h3 class="work-group__label">Systems &amp; performance</h3>
+          <div class="work-grid">
+            <article class="work-card">
+              <h4 class="work-card__title">Performance where it matters</h4>
+              <p>
+                When performance becomes cost or experience, I go down a level:
+                I rewrite the critical paths in Rust — several times faster than
+                pure Python — and measure everything with benchmarks, so the
+                decision is data, not hype. Systems and low-level, ongoing
+                study.
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">Rust</span>
+                <span class="tag">PyO3</span>
+                <span class="tag">Polars</span>
+                <span class="tag">Benchmarks</span>
+              </div>
+            </article>
+            <article class="work-card">
+              <h4 class="work-card__title">The automation that started it all</h4>
+              <p>
+                Where it all began, in 2022: I automated the procurement
+                processes of an automotive group — the first time I saw, in
+                practice, technology turn into business results.
+              </p>
+              <div class="work-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Selenium</span>
+                <span class="tag">SQL</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="stack" data-reveal>
         <header class="section__head">
-          <p class="section__label">02 — Stack</p>
+          <p class="section__label">03 — Stack</p>
           <h2 class="section__title">Stack</h2>
         </header>
-        <div
-          class="stack-cloud"
-          aria-label="Tools and technologies in the stack"
-        >
+        <div class="stack-cloud" aria-label="Stack tools and technologies">
           <a
             class="stack-cloud__orbit"
             href="https://www.python.org/"
@@ -444,48 +684,6 @@
           /></a>
           <a
             class="stack-cloud__orbit"
-            href="https://git-scm.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Git"
-            ><img
-              src="https://cdn.simpleicons.org/git/F05032"
-              alt=""
-              width="54"
-              height="54"
-              loading="lazy"
-              decoding="async"
-          /></a>
-          <a
-            class="stack-cloud__orbit"
-            href="https://www.kernel.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Linux"
-            ><img
-              src="https://cdn.simpleicons.org/linux/FCC624"
-              alt=""
-              width="54"
-              height="54"
-              loading="lazy"
-              decoding="async"
-          /></a>
-          <a
-            class="stack-cloud__orbit"
-            href="https://docs.astral.sh/uv/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="uv"
-            ><img
-              src="https://cdn.simpleicons.org/uv/DE58FE"
-              alt=""
-              width="54"
-              height="54"
-              loading="lazy"
-              decoding="async"
-          /></a>
-          <a
-            class="stack-cloud__orbit"
             href="https://duckdb.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -520,20 +718,6 @@
             title="LangChain"
             ><img
               src="https://cdn.simpleicons.org/langchain/1C3C3C"
-              alt=""
-              width="54"
-              height="54"
-              loading="lazy"
-              decoding="async"
-          /></a>
-          <a
-            class="stack-cloud__orbit"
-            href="https://cursor.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Cursor"
-            ><img
-              src="https://cdn.simpleicons.org/cursor/000000"
               alt=""
               width="54"
               height="54"
@@ -617,31 +801,30 @@
             <h3 class="stack-card__title">Backend &amp; APIs</h3>
             <p class="stack-card__tags">
               Python · FastAPI · Granian · asyncpg · Pydantic · orjson · PyJWT ·
-              Argon2 · curl_cffi · Rust (Axum) · Go
+              Argon2 · Rust (Axum, PyO3)
             </p>
             <p class="stack-card__note">
-              High-performance async APIs with raw SQL, but the backend
-              isn&apos;t Python-only — Rust with Axum and Go are also in the
-              ecosystem.
+              High-performance async APIs with raw SQL. When the path is
+              CPU-bound, Rust steps in via PyO3 or Axum.
             </p>
           </article>
           <article class="stack-card">
             <div class="stack-card__icon" aria-hidden="true">◆</div>
-            <h3 class="stack-card__title">Data engineering &amp; science</h3>
+            <h3 class="stack-card__title">Data &amp; science</h3>
             <p class="stack-card__tags">
-              Polars · DuckDB · Lakehouse · PostgreSQL · SQLAlchemy Core ·
-              Alembic · JSONB · ML · Dashboards
+              Polars · DuckDB · Delta Lake · PostgreSQL · SQLAlchemy Core ·
+              JSONB · ML · Lakehouse
             </p>
             <p class="stack-card__note">
-              No Pandas — Polars and DuckDB for ETL and analysis. PostgreSQL for
-              persistence. ML applied to business.
+              No Pandas — Polars and DuckDB for ETL and analysis, a layered
+              lakehouse architecture, ML applied to business.
             </p>
           </article>
           <article class="stack-card">
             <div class="stack-card__icon" aria-hidden="true">▣</div>
             <h3 class="stack-card__title">Frontend &amp; UI</h3>
             <p class="stack-card__tags">
-              TypeScript · React · Vite · Tailwind CSS · Shadcn/ui · TanStack
+              TypeScript · React 19 · Vite · Tailwind CSS · Shadcn/ui · TanStack
               (Router, Query, Form) · Zod · Bun
             </p>
             <p class="stack-card__note">
@@ -653,299 +836,38 @@
             <div class="stack-card__icon" aria-hidden="true">◎</div>
             <h3 class="stack-card__title">AI &amp; computer vision</h3>
             <p class="stack-card__tags">
-              PyTorch · TensorFlow · OpenCV · YOLO · RF-DETR · Hugging Face ·
-              LangChain · MCP · LibreChat
+              PyTorch · OpenCV · YOLO · RF-DETR · Hugging Face · LangChain · MCP
+              · LibreChat
             </p>
             <p class="stack-card__note">
-              Two years of production CV in manufacturing. Now: corporate AI
-              platforms with agents and orchestration.
+              Two years of computer vision in industrial production. Today:
+              enterprise AI platforms with agents and orchestration.
             </p>
           </article>
           <article class="stack-card">
             <div class="stack-card__icon" aria-hidden="true">⌁</div>
             <h3 class="stack-card__title">Systems &amp; low-level</h3>
             <p class="stack-card__tags">
-              Rust · C/C++ (background) · Go · Zig (on radar) · Linux · Shell ·
-              Kernel concepts
+              Rust · C/C++ (base) · Go · Zig (radar) · Linux · Shell · kernel
+              concepts
             </p>
             <p class="stack-card__note">
-              Deep-diving into Rust — ownership, lifetimes, zero-cost
-              abstractions. Go and Zig on the study horizon.
+              Rust in depth — ownership, lifetimes, zero-cost abstractions. Go
+              and Zig on the study horizon.
             </p>
           </article>
           <article class="stack-card">
             <div class="stack-card__icon" aria-hidden="true">⎔</div>
-            <h3 class="stack-card__title">DevOps &amp; tooling</h3>
+            <h3 class="stack-card__title">Method &amp; tooling</h3>
             <p class="stack-card__tags">
-              Docker · Git · CI/CD · uv · Linux admin · Cursor · Claude Code ·
-              Agents · Rules/Skills · Plan/Execute
+              AI-assisted engineering · Agents · Rules/Skills · Plan/Execute ·
+              Docker · Git · CI · uv · Linux
             </p>
             <p class="stack-card__note">
-              Software Engineering 2.0: plan with heavy model, execute with fast
-              model. Workflow automation enthusiast.
+              An AI harness with versioned rules and skills: I plan with a
+              strong model, execute with a fast one, and the model respects my
+              invariants.
             </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="projects" data-reveal>
-        <header class="section__head">
-          <p class="section__label">03 — Projects</p>
-          <h2 class="section__title">Projects</h2>
-        </header>
-        <div class="timeline">
-          <article class="timeline__item">
-            <div class="timeline__date">2025 — Now</div>
-            <div class="timeline__card">
-              <h3>AI Engineering 2.0 workflow</h3>
-              <p>
-                Development architecture with Cursor and Claude Code: custom
-                Python/TS rules, sub-agents, plan mode with a capable model plus
-                execution with a cost-effective one.
-              </p>
-              <div class="timeline__tags">
-                <span class="tag">Cursor</span>
-                <span class="tag">Claude Code</span>
-                <span class="tag">Agents</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">2024 — Now</div>
-            <div class="timeline__card">
-              <h3>Data &amp; RevOps intelligence</h3>
-              <p>
-                Strategic data pipelines for RevOps: dashboards, ML for
-                forecasting, automations, market intelligence — separating real
-                solutions from AI hype.
-              </p>
-              <div class="timeline__tags">
-                <span class="tag">Polars</span>
-                <span class="tag">DuckDB</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">ML</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">Parallel</div>
-            <div class="timeline__card">
-              <h3>Startup — real estate &amp; construction intelligence</h3>
-              <p>
-                Business intelligence and AI for real estate and civil
-                construction — technical architecture and stack leadership.
-              </p>
-              <div class="timeline__tags">
-                <span class="tag">FastAPI</span>
-                <span class="tag">React</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">Polars</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">Parallel</div>
-            <div class="timeline__card">
-              <h3>Startup — sports event management platform</h3>
-              <p>
-                End-to-end platform: organizers, athletes, timers, ticket
-                marketplace, live results, marketing, and operations.
-              </p>
-              <div class="timeline__tags">
-                <span class="tag">FastAPI</span>
-                <span class="tag">React</span>
-                <span class="tag">TanStack</span>
-                <span class="tag">Shadcn</span>
-                <span class="tag">PostgreSQL</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">Parallel</div>
-            <div class="timeline__card">
-              <h3>Startup — vehicle sales platform</h3>
-              <p>
-                Partnership building a platform for used-vehicle sales — trust,
-                inventory, and conversion.
-              </p>
-              <div class="timeline__tags">
-                <span class="tag">FastAPI</span>
-                <span class="tag">React</span>
-                <span class="tag">PostgreSQL</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">2025 — Now</div>
-            <div class="timeline__card">
-              <h3>Corporate AI platform</h3>
-              <p>
-                LibreChat fork for a large automotive OEM with 3,000+ employees.
-                Custom AI agents, MCP integration, LangChain, multi-model UI —
-                built for governance and scale.
-              </p>
-              <div class="timeline__tags">
-                <span class="tag">LibreChat</span>
-                <span class="tag">LangChain</span>
-                <span class="tag">MCP</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">React</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">2023 — 2024</div>
-            <div class="timeline__card">
-              <h3>360° AI quality inspection station</h3>
-              <p>
-                Four high-resolution cameras, AI component detection, JSON
-                standards per VIN, 65&quot; monitor UI on the production line.
-              </p>
-              <div class="timeline__embed">
-                <iframe
-                  src="https://1drv.ms/v/c/bb50e87a7091feac/IQThpPnnZsDjTIJ-WUtO3ogJAXRpI93G8fbWB5qiiC128IY"
-                  title="Video demo — 360° inspection station"
-                  loading="lazy"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="timeline__thumb">
-                <img
-                  src="assets/img/pratical_projects/first_ia_station/station.png"
-                  alt="360° inspection station"
-                  loading="lazy"
-                  width="800"
-                  height="450"
-                />
-              </div>
-              <div class="timeline__tags">
-                <span class="tag">PyTorch</span>
-                <span class="tag">TensorFlow</span>
-                <span class="tag">OpenCV</span>
-                <span class="tag">YOLO</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">2023 — 2024</div>
-            <div class="timeline__card">
-              <h3>Sealant inspection station</h3>
-              <p>
-                Overhead camera mapping 108 sealant points on the bench —
-                presence, position, and dimension verification.
-              </p>
-              <div class="timeline__thumb">
-                <img
-                  src="assets/img/pratical_projects/sealant_station/bancada_sealant.png"
-                  alt="Sealant inspection bench"
-                  loading="lazy"
-                  width="800"
-                  height="450"
-                />
-              </div>
-              <div class="timeline__tags">
-                <span class="tag">Computer vision</span>
-                <span class="tag">OpenCV</span>
-                <span class="tag">Python</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">2023 — 2024</div>
-            <div class="timeline__card">
-              <h3>Restaurant people counting</h3>
-              <p>
-                AI counting at peak hours replacing turnstiles — accurate
-                per-meal billing.
-              </p>
-              <div class="timeline__embed">
-                <iframe
-                  src="https://1drv.ms/v/c/bb50e87a7091feac/IQTOUZLORNEVTYXGeBavKg3tAZZqE91V3Pa5r5zLZpR0ORg"
-                  title="Video demo — restaurant people counting"
-                  loading="lazy"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="timeline__tags">
-                <span class="tag">YOLO</span>
-                <span class="tag">OpenCV</span>
-                <span class="tag">Python</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">2023 — 2024</div>
-            <div class="timeline__card">
-              <h3>Drone-based yard mapping</h3>
-              <p>
-                Aerial vision prototype: counting and identifying vehicles in
-                industrial yards.
-              </p>
-              <div class="timeline__embed">
-                <iframe
-                  src="https://1drv.ms/v/c/bb50e87a7091feac/IQTrbxb2ZFFVSoVeMyCYxntUAQKRItm1H3X5YYU5rGjp0sM"
-                  title="Video demo — drone yard mapping"
-                  loading="lazy"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="timeline__tags">
-                <span class="tag">Computer vision</span>
-                <span class="tag">Drone</span>
-                <span class="tag">AI</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">2023 — 2024</div>
-            <div class="timeline__card">
-              <h3>AI value-added analysis (AVA)</h3>
-              <p>
-                Video inspection categorizing manufacturing work into
-                value-added, non-value-added, and incidental activities.
-              </p>
-              <div class="timeline__embed">
-                <iframe
-                  src="https://1drv.ms/v/c/bb50e87a7091feac/IQTloDqvp2iSS5bRxBo7z09NAR2qmdDA0wcvD0xSaFSFZ_g"
-                  title="Video demo — value-added analysis (AVA)"
-                  loading="lazy"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="timeline__tags">
-                <span class="tag">Video analysis</span>
-                <span class="tag">ML</span>
-                <span class="tag">Process engineering</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline__item">
-            <div class="timeline__date">2022 — 2023</div>
-            <div class="timeline__card">
-              <h3>Purchasing process automation</h3>
-              <p>
-                Purchase orders, live NCM lookup, SERASA scraper for supplier
-                monitoring, network contract mapping from PDFs — as an intern at
-                an automotive group.
-              </p>
-              <div class="timeline__tags">
-                <span class="tag">Python</span>
-                <span class="tag">Selenium</span>
-                <span class="tag">Django</span>
-                <span class="tag">SQL</span>
-              </div>
-            </div>
           </article>
         </div>
       </section>
@@ -958,169 +880,67 @@
         <div class="edu-lead">
           <p>
             <strong style="color: var(--text-primary)"
-              >Bachelor&apos;s Degree in Production Engineering — Federal
-              University of Catalão (2018–2023).</strong
+              >B.Sc. in Production Engineering — Federal University of Catalão
+              (2018–2023).</strong
             >
-          </p>
-          <p>
-            The Production Engineer ensures efficiency in production processes
-            while maintaining low costs. The program provides solid scientific,
-            technological, and professional training to identify, formulate, and
-            solve problems related to project activities, operations, and
-            management of production systems — encompassing human, economic,
-            social, and environmental aspects.
           </p>
           <p>
             Production engineering gave me the lens of efficiency, process
-            optimization, and methodologies that I apply daily to software and
-            business.
-          </p>
-          <p class="edu-links">
-            <a
-              href="https://engproducao.catalao.ufg.br"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Course website ↗</a
-            >
-            <span style="color: var(--text-muted)"> · </span>
-            <a
-              href="https://engproducao.catalao.ufg.br/p/6444-grade"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Curriculum ↗</a
-            >
+            optimization and method that I apply every day to software and
+            business. The rest — architecture, data, AI — I built self-taught,
+            always practicing on real projects: official docs, open source,
+            papers, books and AI as a tutor.
           </p>
         </div>
 
-        <div class="edu-highlight" aria-label="Learning focus">
+        <div class="edu-highlight" aria-label="Current learning focus">
           <div class="edu-highlight__row">
-            <span class="edu-highlight__period">2026+</span>
+            <span class="edu-highlight__period">Deepening</span>
             <div class="edu-highlight__text">
-              <strong>Systems &amp; High-Performance Programming</strong>
-              Deep-diving into Rust (ownership, lifetimes, Axum, zero-cost
-              abstractions), Go, Zig — safety, performance, and scalability at
-              the systems level. Kernel and bare-metal thinking.
+              <strong>Systems &amp; high-performance programming</strong>
+              Rust in depth (ownership, lifetimes, Axum, zero-cost
+              abstractions), memory model, concurrency and low-level. Go and Zig
+              on the radar.
             </div>
           </div>
           <div class="edu-highlight__row">
-            <span class="edu-highlight__period">2026+</span>
+            <span class="edu-highlight__period">Deepening</span>
             <div class="edu-highlight__text">
-              <strong
-                >Software Engineering 2.0 &amp; Technical Leadership</strong
-              >
-              Deepening Cursor, Claude Code, agent architectures, and
-              plan/execute workflows. Also studying team management, leadership,
-              and solution architecture at scale.
+              <strong>Technical leadership &amp; architecture at scale</strong>
+              Growing technical people, solution architecture and management —
+              turning one person's work into a team's work.
             </div>
           </div>
-        </div>
-
-        <p class="section__label" style="margin-bottom: var(--space-md)">
-          Selected courses
-        </p>
-        <p class="edu-context">
-          Courses from the beginning of my self-taught journey, starting with
-          Udemy and Coursera. Today my learning methods are far more efficient:
-          AI as a tutor (Claude, Gemini), official documentation, open source
-          repositories, academic theses and papers, technical YouTube videos,
-          and books — always with hands-on practice in real projects.
-        </p>
-        <ul class="edu-list">
-          <li>
-            <span class="year">2022</span> Python 3 Basic to Advanced (112h) —
-            Udemy
-          </li>
-          <li>
-            <span class="year">2022</span> Deep Learning with TensorFlow (15h) —
-            Udemy
-          </li>
-          <li>
-            <span class="year">2022</span> ML &amp; Data Science A–Z (42h) —
-            Udemy
-          </li>
-          <li>
-            <span class="year">2022</span> Statistics for DS &amp; ML (20h) —
-            Udemy
-          </li>
-          <li>
-            <span class="year">2022</span> Google Data Science Foundations —
-            Coursera
-          </li>
-          <li>
-            <span class="year">2022</span> Google Get Started with Python —
-            Coursera
-          </li>
-          <li>
-            <span class="year">2022</span> Google Go Beyond the Numbers —
-            Coursera
-          </li>
-          <li>
-            <span class="year">2022</span> Data Science for Business (14.5h) —
-            Udemy
-          </li>
-          <li>
-            <span class="year">2021</span> Web Development Complete (81h) —
-            Danki Code
-          </li>
-        </ul>
-
-        <div class="cert-cta">
-          <button type="button" class="btn" id="cert-open">
-            View certificates →
-          </button>
         </div>
       </section>
 
       <section class="section" id="interests" data-reveal>
         <header class="section__head">
-          <p class="section__label">05 — Interests</p>
-          <h2 class="section__title">What I&apos;m following</h2>
+          <p class="section__label">05 — On my radar</p>
+          <h2 class="section__title">What I'm following</h2>
         </header>
         <div class="interests-wrap">
-          <span class="interest-chip"
-            >Software Engineering 2.0 (plan/execute)</span
-          >
-          <span class="interest-chip"
-            >Agents, rules, skills &amp; sub-agents</span
-          >
+          <span class="interest-chip">AI-assisted engineering</span>
+          <span class="interest-chip">Agents, rules &amp; skills</span>
           <span class="interest-chip">Rust ecosystem</span>
           <span class="interest-chip">High-performance PostgreSQL</span>
+          <span class="interest-chip">Lakehouse architecture &amp; DuckDB</span>
           <span class="interest-chip">FastAPI at scale</span>
-          <span class="interest-chip"
-            >APIs &amp; contracts in microservices</span
-          >
           <span class="interest-chip">Polars &amp; modern DataFrames</span>
-          <span class="interest-chip">RF-DETR &amp; post-YOLO vision</span>
-          <span class="interest-chip">Open source alternatives</span>
-          <span class="interest-chip"
-            >Benchmarks &amp; runtimes (Rust, Go, JS)</span
-          >
-          <span class="interest-chip">TanStack · Shadcn · Bun</span>
-          <span class="interest-chip"
-            >Go &amp; Zig — high-performance systems</span
-          >
-          <span class="interest-chip">Data Science applied to business</span>
-          <span class="interest-chip"
-            >Clean architecture &amp; design patterns</span
-          >
+          <span class="interest-chip">Post-YOLO vision (RF-DETR)</span>
+          <span class="interest-chip">Benchmarks &amp; runtimes</span>
+          <span class="interest-chip">Go &amp; Zig — systems</span>
+          <span class="interest-chip">Clean architecture</span>
           <span class="interest-chip">Self-hosting &amp; data sovereignty</span>
-          <span class="interest-chip"
-            >Technical management &amp; team leadership</span
-          >
-          <span class="interest-chip">Data visualization in Python</span>
-          <span class="interest-chip">Linux &amp; terminal tools</span>
-          <span class="interest-chip">Tauri &amp; native apps</span>
-          <span class="interest-chip">AI infrastructure</span>
-          <span class="interest-chip">Bun.js &amp; modern JS runtimes</span>
-          <span class="interest-chip">DuckDB &amp; lakehouse architecture</span>
-          <span class="interest-chip">DevOps &amp; container alternatives</span>
         </div>
       </section>
     </main>
 
     <footer class="site-footer" id="contact">
       <div class="site-footer__inner">
-        <p class="site-footer__status">Independent consultant</p>
+        <p class="site-footer__status">
+          Bellanda Intelligence · products &amp; consulting
+        </p>
         <p class="site-footer__email">
           <a href="mailto:bellanda.dev@outlook.com">bellanda.dev@outlook.com</a>
           <span class="mono" style="color: var(--text-muted)"> · </span>
@@ -1190,118 +1010,10 @@
             </svg>
           </a>
         </div>
-        <p class="site-footer__quote">
-          Let&apos;s build something that matters.
-        </p>
+        <p class="site-footer__quote">Let's build something that matters.</p>
         <p class="site-footer__copy">© Gustavo Bellanda</p>
       </div>
     </footer>
-
-    <div
-      class="cert-modal"
-      id="cert-modal"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="cert-title"
-      hidden
-    >
-      <div class="cert-modal__dialog">
-        <h2 id="cert-title" class="sr-only">Certificates</h2>
-        <button type="button" class="cert-modal__close" id="cert-close">
-          Close
-        </button>
-        <div class="cert-grid">
-          <figure>
-            <img
-              src="assets/img/certification_deep_learning/UC-93e7ac01-cebc-486f-b8a1-7aa2b5771fcf.jpg"
-              alt="Deep Learning certificate"
-              loading="lazy"
-            />
-            <figcaption>Deep Learning — Udemy</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_ds/UC-932f78a8-f495-4d7b-b999-96501918d874.jpg"
-              alt="Data Science certificate"
-              loading="lazy"
-            />
-            <figcaption>Machine Learning &amp; Data Science — Udemy</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_google_data_science/Coursera%20P8HEQHEGWKLR.jpg"
-              alt="Google Data Science certificate"
-              loading="lazy"
-            />
-            <figcaption>Google Data Science — Coursera</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_google_go_beyound/Coursera%20H8QRVQ3CTE3E.jpg"
-              alt="Google Cloud certificate"
-              loading="lazy"
-            />
-            <figcaption>Google Cloud — Coursera</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_google_python/Coursera%20T8GVGDXBGQKS.jpg"
-              alt="Google Python certificate"
-              loading="lazy"
-            />
-            <figcaption>Google Python — Coursera</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_google_python/certification_ml/UC-80648128-a6ab-4f3f-894c-ca1b29f3dd0a.jpg"
-              alt="Machine Learning certificate"
-              loading="lazy"
-            />
-            <figcaption>Machine Learning — Coursera</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_machine_learning_a_z/UC-80648128-a6ab-4f3f-894c-ca1b29f3dd0a.jpg"
-              alt="Machine Learning A-Z certificate"
-              loading="lazy"
-            />
-            <figcaption>Machine Learning A–Z — Udemy</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_python/UC-dcd09fb0-fb55-471a-aae3-8f65f2fb16b9.jpg"
-              alt="Python 3 certificate"
-              loading="lazy"
-            />
-            <figcaption>Python 3 — Udemy</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_statistics/UC-0f404537-7880-4576-ad07-e68f1b2796fb.jpg"
-              alt="Statistics certificate"
-              loading="lazy"
-            />
-            <figcaption>Statistics for DS &amp; ML — Udemy</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_web/ff422b6a-affd-4f83-bac2-7fbdebe6f327.jpg"
-              alt="Web development certificate"
-              loading="lazy"
-            />
-            <figcaption>Web Development — Danki Code</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="assets/img/certification_xls/UC-9813a3ac-6c95-42c3-a023-a30be183bf6b.jpg"
-              alt="Excel certificate"
-              loading="lazy"
-            />
-            <figcaption>Excel &amp; data — Udemy</figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
 
     <script src="assets/js/main.js" defer></script>
   </body>

@@ -125,59 +125,6 @@
     });
   }
 
-  function initCertificateModal() {
-    const openBtn = document.getElementById("cert-open");
-    const closeBtn = document.getElementById("cert-close");
-    const modal = document.getElementById("cert-modal");
-    if (!modal || !openBtn) return;
-
-    const focusable =
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-
-    function trap(e) {
-      if (e.key !== "Tab") return;
-      const nodes = modal.querySelectorAll(focusable);
-      if (!nodes.length) return;
-      const first = nodes[0];
-      const last = nodes[nodes.length - 1];
-      if (e.shiftKey && document.activeElement === first) {
-        e.preventDefault();
-        last.focus();
-      } else if (!e.shiftKey && document.activeElement === last) {
-        e.preventDefault();
-        first.focus();
-      }
-    }
-
-    function openModal() {
-      modal.hidden = false;
-      modal.setAttribute("aria-hidden", "false");
-      document.body.classList.add("modal-open");
-      closeBtn?.focus();
-      document.addEventListener("keydown", onKey);
-      modal.addEventListener("keydown", trap);
-    }
-
-    function closeModal() {
-      modal.hidden = true;
-      modal.setAttribute("aria-hidden", "true");
-      document.body.classList.remove("modal-open");
-      document.removeEventListener("keydown", onKey);
-      modal.removeEventListener("keydown", trap);
-      openBtn.focus();
-    }
-
-    function onKey(e) {
-      if (e.key === "Escape") closeModal();
-    }
-
-    openBtn.addEventListener("click", openModal);
-    closeBtn?.addEventListener("click", closeModal);
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) closeModal();
-    });
-  }
-
   document.addEventListener("DOMContentLoaded", () => {
     migrateLangStorage();
     initLangToggle();
@@ -186,6 +133,5 @@
     initSmoothNav();
     initNavActive();
     initMobileNav();
-    initCertificateModal();
   });
 })();
